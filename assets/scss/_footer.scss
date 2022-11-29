@@ -1,0 +1,27 @@
+
+footer {
+    background-color: #000000;
+    padding: 20px 0px;
+    h2 {
+        font-family: 'DM Sans', sans-serif;
+        font-weight: 400;   
+        font-size: 16px;             
+        color: #808080;
+        margin: 0;
+    }
+    a {
+        font-family: 'DM Sans', sans-serif;
+        font-weight: 400;
+        font-size: 18px;        
+        color: #FFFFFF;
+        text-decoration: none;
+        &:hover,
+        &:focus {
+            color: #FFFFFF;
+            text-decoration: underline;
+        }
+        &:focus-visible {
+            outline-style: none;
+        }
+    }
+}
