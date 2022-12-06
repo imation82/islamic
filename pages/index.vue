@@ -1,5 +1,6 @@
 <template>
   <div>
+    <Khateebs/>
     <Newsletter/>
     <StayInTouch/>
     <Map/>
@@ -10,6 +11,7 @@
 
 <script>
 
+import Khateebs from '~/components/Khateebs';
 import Newsletter from '~/components/Newsletter';
 import StayInTouch from '~/components/StayInTouch';
 import Map from '~/components/Map';
@@ -19,6 +21,7 @@ import FooterBottom from '~/components/FooterBottom';
 export default {
   name: 'Index',
   components: {
+    Khateebs,
     Newsletter,
     StayInTouch,
     Map,
