@@ -1,0 +1,38 @@
+
+.stayintouch {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #FDFDFD;
+    h2 {
+        font-family: 'Amita', sans-serif;
+        font-weight: 700;
+        font-size: 35px;
+        color: #000000;
+    }
+    h3 {
+        font-family: 'DM Sans', sans-serif;
+        font-size: 25px;        
+    }
+    i {
+        color: #008000;
+        font-size: 30px;
+    }
+    a {
+        font-family: 'DM Sans', sans-serif;
+        font-size: 25px;
+        color: #000000;
+        text-decoration: none;
+        &:hover,
+        &:focus {
+            color: #008000;
+        }
+        &:focus-visible {
+            outline-style: none;
+        }        
+    }
+    p {
+        font-family: 'DM Sans', sans-serif;
+        font-size: 20px;   
+        color: #000000;     
+    }
+}
