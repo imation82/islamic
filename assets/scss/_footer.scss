@@ -1,5 +1,55 @@
 
-footer {
+.footer {
+    background-color: #291F1F;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    h3 {
+        font-family: 'Amita', sans-serif;
+        font-weight: 400;
+        font-size: 25px;
+        margin: 0px 0px 10px 0px;
+        color: #FFFFFF;
+    }
+    h4 {
+        font-family: 'Amita', sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+        color: #FFFFFF;
+        margin: 10px 0px 0px 0px;
+    }
+    &__logo {
+        width: 125px !important;
+    }
+    &__links {
+        margin-bottom: 0;
+        li {
+            font-family: 'DM Sans', sans-serif;
+            line-height: 1.8;
+            a {
+                color: #FFFFFF;
+                text-decoration: none;
+                font-size: 14px;
+                &:hover,
+                &:focus {
+                    color: #808080;
+                }
+                &:focus-visible {
+                    outline-style: none;
+                }
+                &::before {
+                    content: "\F138";
+                    font-family: "bootstrap-icons";
+                    font-size: 11px;
+                    font-weight: 700;
+                    margin-right: 10px;
+                    color: #808080;               
+                }
+            }
+        }
+    }
+}
+
+.footer__bottom {
     background-color: #000000;
     padding: 20px 0px;
     h2 {
@@ -12,7 +62,7 @@ footer {
     a {
         font-family: 'DM Sans', sans-serif;
         font-weight: 400;
-        font-size: 18px;        
+        font-size: 16px;        
         color: #FFFFFF;
         text-decoration: none;
         &:hover,
