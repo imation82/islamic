@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "khateebs",
+  "info": {
+    "singularName": "khateeb",
+    "pluralName": "khateebs",
+    "displayName": "Khateeb",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "profile": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}

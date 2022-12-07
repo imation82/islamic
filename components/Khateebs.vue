@@ -10,16 +10,16 @@
             <div class="row mt-3">
                 <div class="col-lg-10 offset-lg-1">
                     <div class="row">
-                        <div class="col-lg-4">
+                        <div class="col-lg-4" v-for="khateeb in khateebs" :key="khateeb.id">
                             <div class="khateebs__block mb-3 mb-lg-0">
-                                <img src="~assets/images/omar_ockeh.jpg" alt="Omar Ockeh" class="img-fluid d-block mx-auto">
+                                <img src="" alt="Omar Ockeh" class="img-fluid d-block mx-auto">
                                 <div class="khateebs__name">
-                                    <h3>Sh. Omar Ockeh</h3>
+                                    <h3>{{ khateeb.attributes.name }}</h3>
                                     <span class="khateebs__line"></span>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4">
+                        <!-- <div class="col-lg-4">
                             <div class="khateebs__block mb-3 mb-lg-0">
                                 <img src="~assets/images/nabil_omran.jpg" alt="Nabil Omran" class="img-fluid d-block mx-auto">
                                 <div class="khateebs__name">
@@ -36,10 +36,28 @@
                                     <span class="khateebs__line"></span>
                                 </div>
                             </div>                     
-                        </div>                         
+                        </div>                          -->
                     </div>
                 </div>                               
             </div>            
         </div>
     </section>
 </template>
+
+<script>
+
+import axios from 'axios'
+
+export default {
+  data () {
+    return {
+      khateebs: [],
+    }
+  },
+  async mounted () {
+      const response = await axios.get('http://localhost:1337/api/khateebs')
+      this.khateebs = response.data.data
+    } 
+}
+
+</script>
