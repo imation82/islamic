@@ -1,12 +1,15 @@
 
 .newsletter {
-    padding-top: 60px;
-    padding-bottom: 60px;
-    background-color: #008000;
+    position: relative;
+    background-image: url('~assets/images/background01.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 90px;
+    padding-bottom: 90px;
     h2 {
-        font-family: 'Amita', sans-serif;
-        font-weight: 700;
-        font-size: 30px;
+        font-family: 'DM Sans', sans-serif;
+        font-weight: 400;
+        font-size: 35px;
         color: #FFFFFF;
     }
     input {
